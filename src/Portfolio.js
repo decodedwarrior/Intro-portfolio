@@ -32,8 +32,12 @@ export default function Portfolio() {
           variants={fadeInUp}
           className="text-center pt-20 pb-24 bg-[#FFEB3B] text-black rounded-lg shadow-md"
         >
-          <h2 className="text-4xl font-extrabold mb-4">Full Stack Developer & Multimedia Creator</h2>
-          <p className="text-lg max-w-2xl mx-auto">Building scalable web apps with MERN stack, crafting multimedia content, and writing clean documentation.</p>
+          <h2 className="text-5xl font-extrabold mb-4 bg-gradient-to-r from-blue-500 via-purple-600 to-pink-500 bg-clip-text text-transparent">
+            Full Stack Developer & Multimedia Creator
+          </h2>
+          <p className="text-lg max-w-2xl mx-auto">
+            Building scalable web apps with MERN stack, crafting multimedia content, and writing clean documentation.
+          </p>
         </motion.section>
 
         <motion.section
@@ -45,7 +49,9 @@ export default function Portfolio() {
           variants={fadeInUp}
         >
           <h3 className="text-2xl font-semibold mb-2">About Me</h3>
-          <p className="text-gray-400">I'm currently pursuing an MCA at Lovely Professional University (expected Feb 2026), and completed Full Stack Web Development & Digital Skills in 2025. Passionate about technology, video editing, and creating clean, functional code.</p>
+          <p className="text-gray-400">
+            I'm currently pursuing an MCA at Lovely Professional University (expected Feb 2026), and completed Full Stack Web Development & Digital Skills in 2025. Passionate about technology, video editing, and creating clean, functional code.
+          </p>
         </motion.section>
 
         <motion.section
@@ -141,4 +147,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
 
