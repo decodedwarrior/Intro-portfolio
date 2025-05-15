@@ -1,4 +1,10 @@
 import React from "react";
+import { motion } from "framer-motion";
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
 
 export default function Portfolio() {
   return (
@@ -18,17 +24,38 @@ export default function Portfolio() {
       </header>
 
       <main className="px-6 py-10 space-y-24">
-        <section className="text-center pt-20 pb-24 bg-[#FFEB3B] text-black rounded-lg shadow-md">
-          <h2 className="text-4xl font-extrabold mb-4 animate-fade-in">Full Stack Developer & Multimedia Creator</h2>
+        <motion.section
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+          variants={fadeInUp}
+          className="text-center pt-20 pb-24 bg-[#FFEB3B] text-black rounded-lg shadow-md"
+        >
+          <h2 className="text-4xl font-extrabold mb-4">Full Stack Developer & Multimedia Creator</h2>
           <p className="text-lg max-w-2xl mx-auto">Building scalable web apps with MERN stack, crafting multimedia content, and writing clean documentation.</p>
-        </section>
+        </motion.section>
 
-        <section id="about" className="animate-slide-in-up">
+        <motion.section
+          id="about"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+          variants={fadeInUp}
+        >
           <h3 className="text-2xl font-semibold mb-2">About Me</h3>
           <p className="text-gray-400">I'm currently pursuing an MCA at Lovely Professional University (expected Feb 2026), and completed Full Stack Web Development & Digital Skills in 2025. Passionate about technology, video editing, and creating clean, functional code.</p>
-        </section>
+        </motion.section>
 
-        <section id="skills" className="animate-fade-in">
+        <motion.section
+          id="skills"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+          variants={fadeInUp}
+        >
           <h3 className="text-2xl font-semibold mb-4">Skills</h3>
           <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-gray-400">
             <li>HTML, CSS, JavaScript, React.js, Tailwind CSS</li>
@@ -37,9 +64,16 @@ export default function Portfolio() {
             <li>Git, GitHub, Postman, Vercel, Render</li>
             <li>REST APIs, JWT Auth, CRUD</li>
           </ul>
-        </section>
+        </motion.section>
 
-        <section id="projects" className="animate-slide-in-up">
+        <motion.section
+          id="projects"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+          variants={fadeInUp}
+        >
           <h3 className="text-2xl font-semibold mb-4">Projects</h3>
           <div className="grid gap-6 sm:grid-cols-2">
             <div className="p-4 border border-gray-700 rounded-lg hover:shadow-lg transition">
@@ -59,18 +93,32 @@ export default function Portfolio() {
               <p className="text-gray-400">Markdown technical docs and developer guides.</p>
             </div>
           </div>
-        </section>
+        </motion.section>
 
-        <section id="certifications" className="animate-fade-in">
+        <motion.section
+          id="certifications"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+          variants={fadeInUp}
+        >
           <h3 className="text-2xl font-semibold mb-4">Certifications</h3>
           <ul className="list-disc pl-6 text-gray-400">
             <li>Full Stack Web Development (MERN)</li>
             <li>Technical Documentation Writing</li>
             <li>Video Editing Fundamentals</li>
           </ul>
-        </section>
+        </motion.section>
 
-        <section id="contact" className="animate-slide-in-up">
+        <motion.section
+          id="contact"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+          variants={fadeInUp}
+        >
           <h3 className="text-2xl font-semibold mb-4">Contact</h3>
           <form className="max-w-lg mx-auto space-y-4">
             <input className="w-full px-4 py-2 bg-gray-900 border border-gray-600 rounded-lg" type="text" placeholder="Name" />
@@ -84,7 +132,7 @@ export default function Portfolio() {
             <p>GitHub: <a href="https://github.com/" className="text-blue-400">https://github.com/</a></p>
             <p>YouTube: <a href="https://www.youtube.com/@XtronWarrior" className="text-blue-400">@XtronWarrior</a></p>
           </div>
-        </section>
+        </motion.section>
       </main>
 
       <footer className="text-center py-6 text-gray-600 border-t border-gray-800 mt-12">
