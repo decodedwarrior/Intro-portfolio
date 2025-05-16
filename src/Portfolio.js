@@ -148,6 +148,38 @@ export default function Portfolio() {
             </div>
           </div>
         </motion.section>
+        <motion.section
+  id="experience"
+  initial="hidden"
+  whileInView="visible"
+  viewport={{ once: true, amount: 0.5 }}
+  transition={{ duration: 0.6 }}
+  variants={fadeInUp}
+>
+  <h3 className="text-2xl font-semibold mb-4">Experience</h3>
+  <div className="space-y-6 border-l-2 border-yellow-400 pl-6 relative">
+    {/* Experience 1 */}
+    <div className="relative">
+      <div className="absolute left-[-10px] top-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
+      <h4 className="text-yellow-300 font-bold">Full Stack Developer Intern</h4>
+      <p className="text-gray-400 text-sm">Tech Company XYZ · Jan 2025 - Mar 2025</p>
+      <p className="text-gray-500">
+        Built MERN-based apps with authentication, optimized frontend using React and Tailwind, and wrote clean documentation.
+      </p>
+    </div>
+
+    {/* Experience 2 */}
+    <div className="relative">
+      <div className="absolute left-[-10px] top-1 w-4 h-4 bg-yellow-400 rounded-full"></div>
+      <h4 className="text-yellow-300 font-bold">Freelance Video Editor</h4>
+      <p className="text-gray-400 text-sm">Remote · 2023 - Present</p>
+      <p className="text-gray-500">
+        Created social media edits, educational videos, and digital content using Premiere Pro, Canva, and After Effects.
+      </p>
+    </div>
+  </div>
+</motion.section>
+
 
         <motion.section
           id="certifications"
