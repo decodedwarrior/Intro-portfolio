@@ -17,6 +17,7 @@ export default function Portfolio() {
         <nav className="space-x-6 text-white font-medium">
           <a href="#about" className="hover:text-[#FFEB3B] transition">About</a>
           <a href="#skills" className="hover:text-[#FFEB3B] transition">Skills</a>
+          <a href="#experience" className="hover:text-[#FFEB3B] transition">Experience</a>
           <a href="#projects" className="hover:text-[#FFEB3B] transition">Projects</a>
           <a href="#certifications" className="hover:text-[#FFEB3B] transition">Certifications</a>
           <a href="#contact" className="hover:text-[#FFEB3B] transition">Contact</a>
@@ -70,6 +71,53 @@ export default function Portfolio() {
             <li>Git, GitHub, Postman, Vercel, Render</li>
             <li>REST APIs, JWT Auth, CRUD</li>
           </ul>
+        </motion.section>
+
+        {/* EXPERIENCE TIMELINE SECTION */}
+        <motion.section
+          id="experience"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{ duration: 0.6 }}
+          variants={fadeInUp}
+          className="bg-[#1e1e1e] py-16 px-6 rounded-lg shadow-lg"
+        >
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-3xl font-bold text-center text-yellow-400 mb-10">Experience Timeline</h3>
+
+            <div className="flex justify-center mb-10">
+              <img
+                src="/avatar.png"
+                alt="Avatar"
+                className="w-32 h-32 rounded-full border-4 border-yellow-400 shadow-lg"
+              />
+            </div>
+
+            <div className="relative border-l-4 border-yellow-400 pl-6 space-y-10">
+              <div>
+                <h4 className="text-xl font-semibold text-white">Full Stack Developer – Freelance</h4>
+                <p className="text-sm text-gray-400">2023 – Present</p>
+                <p className="mt-2 text-gray-300">
+                  Developed full-stack web apps using MERN stack. Created scalable solutions, built RESTful APIs, and deployed to Render.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold text-white">Video Editor – Content Creators Hub</h4>
+                <p className="text-sm text-gray-400">2022 – 2023</p>
+                <p className="mt-2 text-gray-300">
+                  Produced and edited over 100+ videos for YouTube and Instagram using Premiere Pro. Delivered engaging content under tight deadlines.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-semibold text-white">Web Developer Intern – XYZ Agency</h4>
+                <p className="text-sm text-gray-400">2021 – 2022</p>
+                <p className="mt-2 text-gray-300">
+                  Contributed to front-end development using React and Tailwind. Focused on accessibility, responsiveness, and team collaboration.
+                </p>
+              </div>
+            </div>
+          </div>
         </motion.section>
 
         <motion.section
@@ -147,5 +195,3 @@ export default function Portfolio() {
     </div>
   );
 }
-
-
