@@ -11,8 +11,7 @@ export default function Portfolio() {
     <div className="bg-[#121212] text-white min-h-screen font-sans scroll-smooth">
       <header className="flex items-center justify-between p-6 border-b border-gray-800">
         <div className="flex items-center space-x-4">
-          <img src="/logo.png" alt="Logo" className="w-10 h-10 rounded-full cursor-pointer" />
-          <h1 className="text-xl font-bold text-[#FFEB3B]">Sumit Moharana</h1>
+          <img src="/avatar.png" alt="Avatar" className="w-10 h-10 rounded-full cursor-pointer" />
         </div>
         <nav className="space-x-6 text-white font-medium">
           <a href="#about" className="hover:text-[#FFEB3B] transition">About</a>
